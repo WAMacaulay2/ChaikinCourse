@@ -20,22 +20,27 @@ article {
 	border: 2px black solid;
 	margin: 10px;
 	height: 14em;
+	position: relative;
 }
 
 p {
+	/*clear: right;*/
 	margin: 0;
 	padding: 5px 10px 10px 10px;
-	clear: right;
+	height: 85%;
+	overflow: auto;/*This is just so the stupid Galaxy Fold can display everything*/
 }
 
 .label {
-	float: right;
+	/*float: right;*/
 	border: 2px black solid;
 	font-size: 125%;
 	font-weight: bold;
 	text-align: center;
-	width: 25%;
+	width: 33.33%;
 	padding: 2px;
+	position: relative;
+	left: 66.67%;
 }
 
 .chicken {
@@ -44,11 +49,15 @@ p {
 
 .beef {
 	background-color: #b00000;
-	color: #ffffff;
 }
 
 .sushi {
-	background-color: #b0b000;
+	background-color: #336600;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #ffffff;
+	text-decoration: none;
 }
 
 /*Only doing six columns since that's about all we need for this assignment.*/
